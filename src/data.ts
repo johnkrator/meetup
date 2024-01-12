@@ -25,7 +25,12 @@ export const ImageCollectionData: ImageCollectionIDataParams[] = [
     }
 ];
 
-export const badges = [
+interface IBadge {
+    id: number;
+    text: string;
+}
+
+export const badges: IBadge[] = [
     {
         id: 1,
         text: "Boost your career"
@@ -68,7 +73,12 @@ export const badges = [
     },
 ];
 
-export const formActions = [
+interface IFormAction {
+    id: number;
+    text: string;
+}
+
+export const formActions: IFormAction[] = [
     {
         id: 1,
         text: "Starting soon!"
@@ -99,7 +109,14 @@ export const formActions = [
     },
 ];
 
-export const HowItWorks = [
+interface IHowItWorks {
+    id: number;
+    title: string;
+    text: string;
+    image: string;
+}
+
+export const HowItWorks: IHowItWorks[] = [
     {
         id: 1,
         title: "Join Group",
