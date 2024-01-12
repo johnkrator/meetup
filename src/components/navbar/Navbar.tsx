@@ -1,5 +1,6 @@
 import {Box, Button, Container, Image} from "@chakra-ui/react";
 import brandLogo from "../../assets/brand-logo.svg";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -8,7 +9,9 @@ const Navbar = () => {
                 <header>
                     <Box display="flex" alignItems="center" justifyContent="space-between" py={2}>
                         <Box>
-                            <Image src={brandLogo} alt="logo"/>
+                            <Link to="/">
+                                <Image src={brandLogo} alt="logo"/>
+                            </Link>
                         </Box>
 
                         <Box>

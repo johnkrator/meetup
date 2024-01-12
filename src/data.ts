@@ -1,6 +1,10 @@
 import imageOne from "../src/assets/image-one.jpg";
 import imageTwo from "../src/assets/image-two.jpg";
 import imageThree from "../src/assets/image-three.jpg";
+
+import joinGroup from "../src/assets/joinagroup.svg";
+import ticket from "../src/assets/ticket.svg";
+import startGroup from "../src/assets/start-group.svg";
 import {ImageCollectionIDataParams} from "./types.ts";
 
 export const ImageCollectionData: ImageCollectionIDataParams[] = [
@@ -93,4 +97,25 @@ export const formActions = [
         id: 7,
         text: "Trending near you"
     },
+];
+
+export const HowItWorks = [
+    {
+        id: 1,
+        title: "Join Group",
+        text: "Do what you love, meet others who love it, find your community.The rest is history!",
+        image: joinGroup
+    },
+    {
+        id: 2,
+        title: "Find an Event",
+        text: "Events are happening on just about any topic you can think of, from online gaming and photography to yoga and hiking.",
+        image: ticket
+    },
+    {
+        id: 3,
+        title: "Start a Group",
+        text: "You don't have to be an expert to gather people together and explore shared interests.",
+        image: startGroup
+    }
 ];
