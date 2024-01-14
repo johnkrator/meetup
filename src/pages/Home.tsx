@@ -4,6 +4,7 @@ import ImageCollection from "../components/hero-section/ImageCollection.tsx";
 import Badges from "../components/Badges.tsx";
 import FormSection from "../components/FormSection.tsx";
 import HowMeetupWork from "../components/howItWorks/HowMeetupWork.tsx";
+import UpcomingMeets from "../components/upcommingMeets.tsx";
 
 const Home = () => {
     return (
@@ -16,6 +17,8 @@ const Home = () => {
             <Badges/>
             <FormSection/>
             <HowMeetupWork/>
+
+            <UpcomingMeets/>
         </div>
     );
 };

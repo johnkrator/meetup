@@ -7,6 +7,11 @@ import ticket from "../src/assets/ticket.svg";
 import startGroup from "../src/assets/start-group.svg";
 import {ImageCollectionIDataParams} from "./types.ts";
 
+import upcomingOne from "../src/assets/upcomming-one.png";
+import upcomingTwo from "../src/assets/upcomming-two.jpg";
+import upcomingThree from "../src/assets/upcomming-three.jpg";
+import upcomingFour from "../src/assets/upcomming-four.jpg";
+
 export const ImageCollectionData: ImageCollectionIDataParams[] = [
     {
         id: 1,
@@ -25,7 +30,7 @@ export const ImageCollectionData: ImageCollectionIDataParams[] = [
     }
 ];
 
-interface IBadge {
+export interface IBadge {
     id: number;
     text: string;
 }
@@ -73,7 +78,7 @@ export const badges: IBadge[] = [
     },
 ];
 
-interface IFormAction {
+export interface IFormAction {
     id: number;
     text: string;
 }
@@ -109,7 +114,7 @@ export const formActions: IFormAction[] = [
     },
 ];
 
-interface IHowItWorks {
+export interface IHowItWorks {
     id: number;
     title: string;
     text: string;
@@ -134,5 +139,54 @@ export const HowItWorks: IHowItWorks[] = [
         title: "Start a Group",
         text: "You don't have to be an expert to gather people together and explore shared interests.",
         image: startGroup
+    }
+];
+
+export interface IUpcomingMeets {
+    id: number;
+    date: Date | string;
+    title: string;
+    description: string;
+    banner: string;
+    count: string;
+    sticker: string;
+}
+
+export const upcomingMeets: IUpcomingMeets[] = [
+    {
+        id: 1,
+        date: new Date(),
+        title: "Upcoming online events",
+        description: "Remote-Working Group.",
+        banner: upcomingOne,
+        count: "134",
+        sticker: "Online event"
+    },
+    {
+        id: 2,
+        date: new Date(),
+        title: "Upcoming in person events",
+        description: "Remote-Working Group.",
+        banner: upcomingTwo,
+        count: "24",
+        sticker: "Offline event"
+    },
+    {
+        id: 3,
+        date: new Date(),
+        title: "Upcoming online events",
+        description: "Remote-Working Group.",
+        banner: upcomingThree,
+        count: "200",
+        sticker: "Online event"
+    },
+    {
+        id: 4,
+        date: new Date(),
+        title: "Upcoming in person events",
+        description: "Remote-Working Group.",
+        banner: upcomingFour,
+        count: "525",
+        sticker: "In person event"
     }
 ];

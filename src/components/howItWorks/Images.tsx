@@ -34,7 +34,9 @@ const Images = () => {
                 height="100%"
                 my={10}
             >
-                <Button color="blue.100">Join Meetup</Button>
+                <Button _hover={{opacity: "0.8"}} fontWeight="normal" bg="blue.100" color="white">
+                    Join Meetup
+                </Button>
             </Box>
         </Box>
     );
