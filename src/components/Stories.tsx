@@ -3,7 +3,7 @@ import {stories} from "../data.ts";
 
 const Stories = () => {
     return (
-        <Container maxWidth="container.xl">
+        <Container maxWidth="container.xl" mb={10}>
             <Box py={10}>
                 <Heading as="h1" size="lg" fontWeight="semibold" textAlign="center" color="gray.800">
                     Stories from Meetup
@@ -32,9 +32,10 @@ const Stories = () => {
                             <Image src={item.banner} width="100%" height="100%" alt="upcoming event" objectFit="cover"/>
                         </Box>
 
-                        <Box>
+                        <Box display={"flex"} flexDirection={"column"} gap={5}>
                             <Box fontWeight="semibold" color="gray.800" fontSize="lg">{item.title}</Box>
-                            <Box fontWeight="semibold" color="gray.600" fontSize="xs">{item.description}</Box>
+                            <Box fontWeight="semibold" color="gray.600" fontSize="sm"
+                                 lineHeight={"20px"}>{item.description}</Box>
                         </Box>
                     </Box>
                 ))}
