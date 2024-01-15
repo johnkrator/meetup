@@ -14,6 +14,10 @@ import upcomingFour from "../src/assets/upcomming-four.jpg";
 
 import popularImage from "../src/assets/popular-image.jpg";
 
+import storyOne from "./assets/story-one.jpg";
+import storyTwo from "./assets/story-two.jpg";
+import storyThree from "./assets/story-three.jpg";
+
 export const ImageCollectionData: ImageCollectionIDataParams[] = [
     {
         id: 1,
@@ -222,5 +226,33 @@ export const popularGroups: IPopularGroups[] = [
         title: "Upcoming online events",
         banner: upcomingThree,
         description: "<info> From Concert: US Navy Commodores Jazz Ensembles at Belmont Bay Marina.",
+    },
+];
+
+export interface IStoriesProps {
+    id: number;
+    title: string;
+    description: string;
+    banner: string;
+}
+
+export const stories: IStoriesProps[] = [
+    {
+        id: 1,
+        title: "Three Ways To Make Coworker Friendships While Working From Home",
+        banner: storyOne,
+        description: "Work friendships don’t need to fade just because you’re working remotely. Here are three fun ways you can get to know your colleagues.",
+    },
+    {
+        id: 2,
+        banner: storyTwo,
+        title: "  Five Ways to Feel More Connected",
+        description: "Since Meetup began nearly 20 years ago, we’ve fostered connections between more than 50 million people in 190 countries worldwide. Here are five simple strategies to help you feel more connected and improve your wellbeing.",
+    },
+    {
+        id: 3,
+        title: "How To Live Your Best Social Life",
+        banner: storyThree,
+        description: "Social interaction is a key part of any healthy lifestyle. Discover all different kinds of events that’ll help you maintain a fun and fulfilling social life.",
     },
 ];

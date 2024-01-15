@@ -7,6 +7,8 @@ import HowMeetupWork from "../components/howItWorks/HowMeetupWork.tsx";
 import UpcomingMeets from "../components/upcommingMeets.tsx";
 import PopularGroups from "../components/PopularGroups.tsx";
 import AppDownloadOptions from "../components/AppDownloadOptions.tsx";
+import Stories from "../components/Stories.tsx";
+import Footer from "../components/Footer.tsx";
 
 const Home = () => {
     return (
@@ -22,8 +24,11 @@ const Home = () => {
 
             <UpcomingMeets/>
             <PopularGroups/>
-            
+
             <AppDownloadOptions/>
+            <Stories/>
+
+            <Footer/>
         </div>
     );
 };
