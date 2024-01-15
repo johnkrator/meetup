@@ -5,6 +5,7 @@ import Badges from "../components/Badges.tsx";
 import FormSection from "../components/FormSection.tsx";
 import HowMeetupWork from "../components/howItWorks/HowMeetupWork.tsx";
 import UpcomingMeets from "../components/upcommingMeets.tsx";
+import PopularGroups from "../components/PopularGroups.tsx";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <HowMeetupWork/>
 
             <UpcomingMeets/>
+            <PopularGroups/>
         </div>
     );
 };

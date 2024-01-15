@@ -1,16 +1,16 @@
 import {Box, Container, Grid, Heading, Image, Link} from "@chakra-ui/react";
+import {upcomingMeets} from "../data.ts";
 import {FaVideo} from "react-icons/fa";
 import {BsBoxArrowUp} from "react-icons/bs";
-import {upcomingMeets} from "../data.ts";
 
-const UpcomingMeets = () => {
+const PopularGroups = () => {
     return (
         <Container maxWidth="container.xl">
             <Box display="flex" alignItems="center" justifyContent="space-between" mt={10} mb={5}
                  flexDirection={{sm: "column", md: "row", lg: "row", xl: "row", base: "column"}}>
-                <Heading as="h3" size="lg">Upcoming online events</Heading>
+                <Heading as="h3" size="lg">Popular groups</Heading>
                 <Link>
-                    <Box color="teal.500" fontWeight="semibold">Explore more events</Box>
+                    <Box color="teal.500" fontWeight="semibold">Explore more groups</Box>
                 </Link>
             </Box>
 
@@ -38,15 +38,7 @@ const UpcomingMeets = () => {
                         </Box>
 
                         <Box color="gray.600" fontWeight="semibold" fontSize="sm" px={5}>
-                            {new Date(item.date).toLocaleString("en-US", {
-                                weekday: "short",
-                                month: "short",
-                                day: "numeric",
-                                hour: "numeric",
-                                minute: "numeric",
-                                hour12: true,
-                                timeZone: "Africa/Lagos"
-                            })} NPT
+                            Sat, Aug 14 @ 9:45 PM NPT
                         </Box>
 
                         <Box px={5}>
@@ -90,4 +82,4 @@ const UpcomingMeets = () => {
     );
 };
 
-export default UpcomingMeets;
+export default PopularGroups;

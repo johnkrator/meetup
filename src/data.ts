@@ -144,7 +144,7 @@ export const HowItWorks: IHowItWorks[] = [
 
 export interface IUpcomingMeets {
     id: number;
-    date: Date | string;
+    date: string;
     title: string;
     description: string;
     banner: string;
@@ -155,7 +155,7 @@ export interface IUpcomingMeets {
 export const upcomingMeets: IUpcomingMeets[] = [
     {
         id: 1,
-        date: new Date(),
+        date: new Date().toISOString(),
         title: "Upcoming online events",
         description: "Remote-Working Group.",
         banner: upcomingOne,
@@ -164,7 +164,7 @@ export const upcomingMeets: IUpcomingMeets[] = [
     },
     {
         id: 2,
-        date: new Date(),
+        date: new Date().toISOString(),
         title: "Upcoming in person events",
         description: "Remote-Working Group.",
         banner: upcomingTwo,
@@ -173,7 +173,7 @@ export const upcomingMeets: IUpcomingMeets[] = [
     },
     {
         id: 3,
-        date: new Date(),
+        date: new Date().toISOString(),
         title: "Upcoming online events",
         description: "Remote-Working Group.",
         banner: upcomingThree,
@@ -182,7 +182,46 @@ export const upcomingMeets: IUpcomingMeets[] = [
     },
     {
         id: 4,
-        date: new Date(),
+        date: new Date().toISOString(),
+        title: "Upcoming in person events",
+        description: "Remote-Working Group.",
+        banner: upcomingFour,
+        count: "525",
+        sticker: "In person event"
+    }
+];
+
+export const popularGroups: IUpcomingMeets[] = [
+    {
+        id: 1,
+        date: new Date().toISOString(),
+        title: "Upcoming online events",
+        description: "Remote-Working Group.",
+        banner: upcomingOne,
+        count: "134",
+        sticker: "Online event"
+    },
+    {
+        id: 2,
+        date: new Date().toISOString(),
+        title: "Upcoming in person events",
+        description: "Remote-Working Group.",
+        banner: upcomingTwo,
+        count: "24",
+        sticker: "Offline event"
+    },
+    {
+        id: 3,
+        date: new Date().toISOString(),
+        title: "Upcoming online events",
+        description: "Remote-Working Group.",
+        banner: upcomingThree,
+        count: "200",
+        sticker: "Online event"
+    },
+    {
+        id: 4,
+        date: new Date().toISOString(),
         title: "Upcoming in person events",
         description: "Remote-Working Group.",
         banner: upcomingFour,
