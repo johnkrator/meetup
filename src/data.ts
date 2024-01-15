@@ -191,41 +191,34 @@ export const upcomingMeets: IUpcomingMeets[] = [
     }
 ];
 
-export const popularGroups: IUpcomingMeets[] = [
+export interface IPopularGroups {
+    id: number;
+    date: string;
+    title: string;
+    description: string;
+    banner: string;
+}
+
+export const popularGroups: IPopularGroups[] = [
     {
         id: 1,
         date: new Date().toISOString(),
-        title: "Upcoming online events",
-        description: "Remote-Working Group.",
+        title: "London Socials for Singles",
         banner: upcomingOne,
-        count: "134",
-        sticker: "Online event"
+        description: "Singles Mingles over Volleyball and Picnics @ Kensington Gardens.",
     },
     {
         id: 2,
         date: new Date().toISOString(),
-        title: "Upcoming in person events",
-        description: "Remote-Working Group.",
         banner: upcomingTwo,
-        count: "24",
-        sticker: "Offline event"
+        title: "Aurora Southland Parker Woman's Social Group",
+        description: "Volunteer committee needed from our Group for 911 event TBA on September.",
     },
     {
         id: 3,
         date: new Date().toISOString(),
         title: "Upcoming online events",
-        description: "Remote-Working Group.",
         banner: upcomingThree,
-        count: "200",
-        sticker: "Online event"
+        description: "<info> From Concert: US Navy Commodores Jazz Ensembles at Belmont Bay Marina.",
     },
-    {
-        id: 4,
-        date: new Date().toISOString(),
-        title: "Upcoming in person events",
-        description: "Remote-Working Group.",
-        banner: upcomingFour,
-        count: "525",
-        sticker: "In person event"
-    }
 ];

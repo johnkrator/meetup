@@ -27,8 +27,8 @@ const UpcomingMeets = () => {
                 {upcomingMeets.map((item) => (
                     <Box key={item.id} width="100%" maxW="sm" mx="auto" overflow="hidden" rounded="lg" shadow="lg"
                          display="flex" flexDirection="column" gap={2}>
-                        <Box position="relative">
-                            <Image src={item.banner} width="100%" alt="upcoming event"/>
+                        <Box>
+                            <Image src={item.banner} width="100%" alt="upcoming event" objectFit="cover"/>
                             <Box bg="white" position="absolute" top={3} ml={2} px={1} fontWeight="semibold"
                                  display="flex"
                                  flexDirection="row" alignItems="center" gap={2} borderRadius="md" color="gray.600">
