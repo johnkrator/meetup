@@ -6,6 +6,7 @@ import FormSection from "../components/FormSection.tsx";
 import HowMeetupWork from "../components/howItWorks/HowMeetupWork.tsx";
 import UpcomingMeets from "../components/upcommingMeets.tsx";
 import PopularGroups from "../components/PopularGroups.tsx";
+import AppDownloadOptions from "../components/AppDownloadOptions.tsx";
 
 const Home = () => {
     return (
@@ -21,6 +22,8 @@ const Home = () => {
 
             <UpcomingMeets/>
             <PopularGroups/>
+            
+            <AppDownloadOptions/>
         </div>
     );
 };

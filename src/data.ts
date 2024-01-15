@@ -12,6 +12,8 @@ import upcomingTwo from "../src/assets/upcomming-two.jpg";
 import upcomingThree from "../src/assets/upcomming-three.jpg";
 import upcomingFour from "../src/assets/upcomming-four.jpg";
 
+import popularImage from "../src/assets/popular-image.jpg";
+
 export const ImageCollectionData: ImageCollectionIDataParams[] = [
     {
         id: 1,
@@ -210,7 +212,7 @@ export const popularGroups: IPopularGroups[] = [
     {
         id: 2,
         date: new Date().toISOString(),
-        banner: upcomingTwo,
+        banner: popularImage,
         title: "Aurora Southland Parker Woman's Social Group",
         description: "Volunteer committee needed from our Group for 911 event TBA on September.",
     },

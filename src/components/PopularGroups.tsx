@@ -26,7 +26,7 @@ const PopularGroups = () => {
                     <Box key={item.id} width="100%" maxW="sm" mx="auto" overflow="hidden" rounded="lg"
                          border="1px" borderColor="gray.400"
                          display="flex" flexDirection="column" gap={2}>
-                        <Box display="flex" flexDirection="row" px={5} py={5}>
+                        <Box display="flex" flexDirection="row" px={5} pt={5}>
                             <Image src={item.banner} width={14} height={14} objectFit="cover" alt="upcoming event"
                                    rounded="lg"/>
                             <Box bg="white" top={3} ml={2} px={1} fontWeight="semibold"
@@ -41,6 +41,7 @@ const PopularGroups = () => {
                             borderBottom="1px"
                             borderColor="gray.400"
                             marginX="5"
+                            mb={3}
                         />
 
                         <Box color="gray.600" fontWeight="semibold" fontSize="xs" px={5}>
