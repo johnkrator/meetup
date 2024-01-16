@@ -59,6 +59,7 @@ const Routes = () => {
                 {path: "home", element: <Home/>},
                 {path: "login", element: <Login/>},
                 {path: "register", element: <Register/>},
+                {path: "/details/:id", element: <ImageDetails/>},
             ]
         }
     ]);
@@ -67,5 +68,6 @@ const Routes = () => {
 const Home = Loadable(lazy(() => import("../pages/Home.tsx")));
 const Login = Loadable(lazy(() => import("../pages/auth/Login.tsx")));
 const Register = Loadable(lazy(() => import("../pages/auth/Register.tsx")));
+const ImageDetails = Loadable(lazy(() => import("../pages/id/ImageDetails.tsx")));
 
 export default Routes;
