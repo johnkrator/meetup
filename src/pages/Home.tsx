@@ -9,27 +9,30 @@ import PopularGroups from "../components/PopularGroups.tsx";
 import AppDownloadOptions from "../components/AppDownloadOptions.tsx";
 import Stories from "../components/Stories.tsx";
 import Footer from "../components/Footer.tsx";
+import {Box, Image} from "@chakra-ui/react";
+import imageBg from "../assets/bg.svg";
 
 const Home = () => {
     return (
-        <div>
-            <Navbar/>
+        <Box>
+            <Box position={"absolute"} top={0} left={0} right={0}>
+                <Navbar/>
+                <HeroSection/>
+                <ImageCollection/>
+                <Badges/>
+                <FormSection/>
+                <HowMeetupWork/>
+                <UpcomingMeets/>
+                <PopularGroups/>
+                <AppDownloadOptions/>
+                <Stories/>
+                <Footer/>
+            </Box>
 
-            <HeroSection/>
-            <ImageCollection/>
-
-            <Badges/>
-            <FormSection/>
-            <HowMeetupWork/>
-
-            <UpcomingMeets/>
-            <PopularGroups/>
-
-            <AppDownloadOptions/>
-            <Stories/>
-
-            <Footer/>
-        </div>
+            <Box position={"relative"} top={0} bottom={0} left={0} right={0} height={"100vh"} zIndex={-1}>
+                <Image src={imageBg} alt={"bg"} w={"80%"} m={"auto"} sizes={"300"} objectFit={"cover"}/>
+            </Box>
+        </Box>
     );
 };
 
