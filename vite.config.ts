@@ -6,7 +6,7 @@ import favicon from "vite-plugin-favicon";
 export default defineConfig({
     plugins: [
         react(),
-        favicon({
+        process.env.NODE_ENV === "production" && favicon({
             logo: "./public/apple-touch-icon.png"
         })
     ],
