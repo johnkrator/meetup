@@ -57,11 +57,15 @@ const Routes = () => {
             element: <Layout/>,
             children: [
                 {path: "home", element: <Home/>},
+                {path: "login", element: <Login/>},
+                {path: "register", element: <Register/>},
             ]
         }
     ]);
 };
 
 const Home = Loadable(lazy(() => import("../pages/Home.tsx")));
+const Login = Loadable(lazy(() => import("../pages/auth/Login.tsx")));
+const Register = Loadable(lazy(() => import("../pages/auth/Register.tsx")));
 
 export default Routes;

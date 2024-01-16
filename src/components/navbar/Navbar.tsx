@@ -15,10 +15,10 @@ const Navbar = () => {
                         </Box>
 
                         <Box>
-                            <Button pr={3} color="gray.600" fontSize="sm" variant="link">
+                            <Button as={Link} to="/login" pr={3} color="gray.600" fontSize="sm" variant="link">
                                 Login
                             </Button>
-                            <Button color="gray.600" fontSize="sm" variant="link">
+                            <Button as={Link} to="/register" color="gray.600" fontSize="sm" variant="link">
                                 Signup
                             </Button>
                         </Box>
