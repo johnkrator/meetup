@@ -9,7 +9,7 @@ const Navbar = () => {
                 <header>
                     <Box display="flex" alignItems="center" justifyContent="space-between" py={2}>
                         <Box>
-                            <Link to="/">
+                            <Link to="/home">
                                 <Image src={brandLogo} alt="logo"/>
                             </Link>
                         </Box>
