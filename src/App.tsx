@@ -1,11 +1,11 @@
-import Home from "./pages/Home.tsx";
-import {Route, Routes} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
+import Routes from "./route/Routes.tsx";
 
 const App = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-        </Routes>
+        <>
+            <RouterProvider router={Routes()}/>
+        </>
     );
 };
 
